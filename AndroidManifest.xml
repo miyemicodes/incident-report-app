@@ -1,0 +1,5 @@
+<platform name="android">
+    <config-file parent="/manifest/application" target="AndroidManifest.xml">
+        <meta-data android:name="firebase_crash_collection_enabled" android:value="false" />
+    </config-file>
+</platform>

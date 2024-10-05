@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Incidents App</title>
+</head>
+
+<body>
+
+    <!-- keeping it simple -->
+    <div class="my-custom-alert" id="error-alert"><div class="alert-content">hey sdsds sdsd</div></div>
+    <div class="my-custom-alert" id="success-alert"><div class="alert-content">hey sdsds sdsd</div></div>
+
+    <!-- LOGIN AND SIGN UP FORm -->
+
+    <div class="auth-form">
+            <div class="login-Sign">
+                <form class="incident-signup" id="register-form">
+                    <h2 class="h2">REGISTER</h2>
+                    <div class="incident-sign">
+                        <label for="username" class="signup-label">Username</label>
+                        <input type="name" placeholder="Enter username" name="username" required />
+                    </div>
+
+                    <div class="incident-sign">
+                        <label for="email" class="signup-label">Email</label>
+                        <input type="email" placeholder="Enter Email" name="email" required />
+                    </div>
+
+                    <div class="incident-sign">
+                        <label for="Password" class="signup-label">Password</label>
+                        <input type="password" placeholder="Enter Password"  name="password" required />
+                    </div>
+                    <div class="login-Sign-btn">
+                        <button type="submit" id="sign-up">Create user</button>
+                        <button type="button" id="open-login-page-btn">login</button>
+                    </div>
+                </form>
+                <form class="incident-login" id="login-form">
+                    <h2 class="h2">LOGIN</h2>
+                    <div class="incident-log">
+                        <label for="email" class="signup-label">Email</label>
+                        <input type="email" placeholder="Enter Email" name="email" required />
+                    </div>
+
+                    <div class="incident-log">
+                        <label for="Password" class="signup-label">Password</label>
+                        <input type="password" placeholder="Enter Password" name="password" required />
+                    </div>
+                    <div class="login-Sign-btn">
+                        <button type="submit" id="login">Login</button>
+                        <button type="button" id="open-sign-up-page-btn">Sign up</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+    </div>
+
+    <!-- HOmE PAGE -->
+
+    <div class="incident-home">
+        <div class="log-user">
+            <button id="log-out-btn">Log Out</button>
+            <span id="display-user"></span>
+        </div>
+
+        <nav class="home-nav">
+            <h1 class="h1">HOME</h1>
+            <button class="add-button">
+                <p>ADD INCIDENT</p>
+            </button>
+        </nav>
+
+        <div class="select-incident-category">
+            <button type="button" id="All">All</button>
+            <button type="button" id="Riot">Riot</b>
+            <button type="button" id="Accident">Accident</b>
+            <button type="button" id="Fighting">Fighting</button>
+        </div>
+
+        <div class="post-list"></div>
+
+    </div>
+
+    <!-- FORm SECTION -->
+
+    <div class="form-section">
+        <h1 class="h1">REPORT AN INCIDENT</h1>
+        <form id="incident-form">
+
+            <div class="incident-title">
+                <label for="title" class="incident-label">Incident</label>
+                <input type="text" placeholder="Enter Incident" id="title" name="title" />
+            </div>
+
+            <div class="incident-category">
+                <label for="category" class="incident-label"> Select Category</label>
+                <select name="category" id="category" value="">
+                    <option value=""></option>
+                        Select Category
+                    </option>
+                    <option value="Fighting">
+                        Fighting
+                    </option>
+                    <option value="Accident">
+                        Accident
+                    </option>
+                    <option value="Riot">
+                        Riot
+                    </option>
+                </select>
+            </div>
+
+            <div class="incident-desc">
+                <label for="title" class="incident-label">Description</label>
+                <textarea type="text" placeholder="Enter description" id="content" name="content" required></textarea>
+            </div>
+
+            <div class="file-upload">
+                <input type="file" id="fileInput" accept="image/*">
+                <div class="image-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                    <p>Upload Image</p>
+                </div>
+
+                <img id="preview" src="" alt="Image Preview">
+            </div>
+
+            <div class="remove-btn-div">
+                <button type="button" id="remove-btn">Remove image</button>
+            </div>
+
+            <button type="submit" id="form-btn">Submit</button>
+
+            <button type="button" id="back-btn">Back</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

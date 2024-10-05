@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "515215647714",
+    "project_id": "incident-app-6c8e5",
+    "storage_bucket": "incident-app-6c8e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515215647714:android:ed8eeece2ff29ed225cfbb",
+        "android_client_info": {
+          "package_name": "com.example.incidents"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRbAQfJTa39HWu7s5R9PXbDd__eOJI7vM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
